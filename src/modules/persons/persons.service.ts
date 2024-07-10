@@ -96,7 +96,7 @@ export class PersonsService {
       createPersonDto.password,
     );
 
-    const isEmailVerified = false;
+    const isEmailVerified = true;
     const isFirstLogin = true;
     const isBanned = false;
 
@@ -110,7 +110,7 @@ export class PersonsService {
       }),
     );
 
-    await this.sendVerifyEmail(newPerson);
+    // await this.sendVerifyEmail(newPerson);
 
     return newPerson;
   }

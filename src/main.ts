@@ -10,6 +10,10 @@ async function bootstrap() {
 
   app.enableCors({ origin: true });
 
+  app.enableCors({
+    origin: true,
+  });
+
   app.setGlobalPrefix('api');
 
   const config = new DocumentBuilder()
